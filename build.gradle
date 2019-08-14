@@ -16,14 +16,16 @@ apply plugin: 'kotlin2js'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    implementation 'com.github.esafirm:firebasekt:v0.0.1'
 }
 
 compileKotlin2Js {
-    kotlinOptions.outputFile = "${projectDir}/web/app.js"
+    kotlinOptions.outputFile = "functions/index.js"
     kotlinOptions.moduleKind = "commonjs"
     kotlinOptions.sourceMap = true
 }

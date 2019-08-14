@@ -1,5 +1,6 @@
 ## User Defined
-web
+web/
+functions/
 
 # Created by https://www.gitignore.io/api/node,gradle,intellij+all
 
